@@ -79,7 +79,7 @@ async function updateStatus(guildId) {
             .setImage(`https://steamcdn-a.akamaihd.net/steam/apps/${steamData.gameid}/header.jpg`)
             .addFields({ name: "Profile", value: `[Link](https://steamcommunity.com/profiles/${steamId})`, inline: false })
             .addFields({ name: "Currently Playing", value: steamData.game, inline: false })
-            .addFields({ name: "\u200B", value: "[🔗 Add to Your Server](https://discord.com/oauth2/authorize?client_id=1338547112161575042&permissions=93184&integration_type=0&scope=bot+applications.commands)", inline: false })
+            .addFields({ name: "\u200B", value: "[🔗 Add to Your Server]()", inline: false })
             .setColor(`#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`)
             .setFooter({ text: `Last update — ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` });
 
